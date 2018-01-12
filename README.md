@@ -1,2 +1,2 @@
-# katycynn.github.com
+# katycynn.github.io
 github pages
