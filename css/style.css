@@ -4,7 +4,7 @@ a {
   text-decoration:none;
 }
 article {
-  margin-top: 35px;
+  margin-top: 40px;
   margin-left:10px;
 }
 body {
@@ -18,9 +18,6 @@ h1 {
   border-bottom-width: 90%;
   border-bottom-left-radius:25px;
   border-bottom-right-radius:25px;
-}
-h2 {
-  text-align: left;
 }
 
 /*class*/
@@ -38,4 +35,35 @@ h2 {
 .header-list li {
   float: left;
   margin: 5px;
+  font-size: 20px;
+}
+.media_p {
+  display: none;
+}
+
+/*id*/
+#disqus_thread {
+  margin: 15px;
+}
+
+/*미디어쿼리
+갤노트3 브라우저 해상도(360px) 이하일 경우
+*/
+@media screen and (max-width: 360px) {
+  article {
+    margin-top: 75px;
+    margin-left:10px;
+  }
+  .media_iframe {
+    display: none;
+  }
+  .media_p {
+    display: block;
+  }
+  .media_p a {
+    color: gray;
+  }
+  #disqus_thread {
+    display: none;
+  }
 }
