@@ -35,11 +35,9 @@ h1 {
 .header-list {
   list-style-type: none;
   text-align: center;
-  margin: 0;
 }
 .header-list li {
   display: inline;
-  margin: 5px;
   font-size: 20px;
 }
 .media_p {
