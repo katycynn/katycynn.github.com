@@ -21,19 +21,24 @@ h1 {
 }
 
 /*class*/
+.div_center {
+  text-align: center;
+}
 .foot{
   margin: 35px;
   color: orange;
+  text-align: center;
 }
 .header-title {
   text-align: center;
 }
 .header-list {
   list-style-type: none;
+  text-align: center;
   margin: 0;
 }
 .header-list li {
-  float: left;
+  display: inline;
   margin: 5px;
   font-size: 20px;
 }
