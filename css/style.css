@@ -1,7 +1,10 @@
 /*element*/
 a {
-  color: powderblue;
   text-decoration:none;
+  color: #22a1c4;
+}
+a:hover {
+  color: black;
 }
 article {
   margin-top: 40px;
@@ -21,6 +24,10 @@ h1 {
 }
 
 /*class*/
+.article-list li {
+  content: "\2022";
+  color: orange;
+}
 .div_center {
   text-align: center;
 }
