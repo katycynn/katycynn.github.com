@@ -24,8 +24,7 @@ h1 {
 }
 
 /*class*/
-.article-list li {
-  content: "\2022";
+.article-list {
   color: orange;
 }
 .div_center {
