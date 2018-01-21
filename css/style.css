@@ -69,9 +69,6 @@ h1 {
   .media_p {
     display: block;
   }
-  .media_p a {
-    color: gray;
-  }
   #disqus_thread {
     display: none;
   }
