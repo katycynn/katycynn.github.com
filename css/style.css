@@ -8,7 +8,7 @@ a:hover {
 }
 article {
   margin-top: 40px;
-  margin-left:10px;
+  margin-left: 10px;
 }
 body {
   margin: 0;
@@ -41,10 +41,16 @@ h1 {
 .header-list {
   list-style-type: none;
   text-align: center;
+  padding-left: 0px;
 }
 .header-list li {
   display: inline;
   font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.media-list {
+  display: none;
 }
 .media_p {
   display: none;
@@ -61,13 +67,28 @@ h1 {
 @media screen and (max-width: 360px) {
   article {
     margin-top: 75px;
-    margin-left:10px;
+    margin-left: 10px;
+  }
+  .header-list {
+    display: none;
   }
   .media_iframe {
     display: none;
   }
   .media_p {
     display: block;
+  }
+  .media-list {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .media-list li {
+    display: inline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #disqus_thread {
     display: none;
