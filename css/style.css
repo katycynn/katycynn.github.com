@@ -65,10 +65,6 @@ h1 {
 갤노트3 브라우저 해상도(360px) 이하일 경우
 */
 @media screen and (max-width: 360px) {
-  article {
-    margin-top: 75px;
-    margin-left: 10px;
-  }
   .header-list {
     display: none;
   }
