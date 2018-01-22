@@ -38,13 +38,26 @@
     <h2>Script</h2>
     <section>
       <button type="button" onclick="
-      document.querySelector('body').style.backgroundColor='black';
-      document.querySelector('body').style.color='white';
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('body').dataset.mode = 'night';
       ">Night</button>
       <button type="button" onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('body').dataset.mode = 'day';
       ">Day</button>
+      <button type="button" onclick="
+        if(document.querySelector('body').dataset.mode === 'night') {
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          document.querySelector('body').dataset.mode = 'day';
+        } else {
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          document.querySelector('body').dataset.mode = 'night';
+        }
+      ">Toggle</button>
     </section>
   </article>
   <article>
