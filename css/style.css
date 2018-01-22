@@ -10,6 +10,19 @@ article {
   margin-top: 40px;
   margin-left: 10px;
 }
+button {
+  background: #22a1c4;
+  color: #ffffff;
+  border: solid;
+  border-color: #22a1c4;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 0;
+  padding: 5px;
+}
 body {
   margin: 0;
 }
