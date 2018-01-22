@@ -47,17 +47,19 @@
         document.querySelector('body').style.color='black';
         document.querySelector('body').dataset.mode = 'day';
       ">Day</button>
-      <button type="button" onclick="
+      <button id="toggleBtn" type="button" onclick="
         if(document.querySelector('body').dataset.mode === 'night') {
           document.querySelector('body').style.backgroundColor = 'white';
           document.querySelector('body').style.color = 'black';
           document.querySelector('body').dataset.mode = 'day';
+          document.querySelector('#toggleBtn').innerHTML = 'Toggle - Night';
         } else {
           document.querySelector('body').style.backgroundColor = 'black';
           document.querySelector('body').style.color = 'white';
           document.querySelector('body').dataset.mode = 'night';
+          document.querySelector('#toggleBtn').innerHTML = 'Toggle - Day';
         }
-      ">Toggle</button>
+      ">Toggle - Night</button>
     </section>
   </article>
   <article>
