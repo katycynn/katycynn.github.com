@@ -41,28 +41,72 @@
         document.querySelector('body').style.backgroundColor='black';
         document.querySelector('body').style.color='white';
         document.querySelector('body').dataset.mode = 'night';
+        var i = 0;
+        while(i < 3) {
+          i++;
+        }
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+          alist[i].style.color = 'powderblue';
+          i++;
+        }
       ">Night</button>
       <button type="button" onclick="
         document.querySelector('body').style.backgroundColor='white';
         document.querySelector('body').style.color='black';
         document.querySelector('body').dataset.mode = 'day';
+        var i = 0;
+        while(i < 3) {
+          i++;
+        }
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+          alist[i].style.color = '#22a1c4';
+          i++;
+        }
       ">Day</button>
-      <button id="toggleBtn" type="button" onclick="
-        if(document.querySelector('body').dataset.mode === 'night') {
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
-          document.querySelector('body').dataset.mode = 'day';
-          document.querySelector('#toggleBtn').innerHTML = 'Toggle - Night';
+      <button type="button" onclick="
+        var target = document.querySelector('body');
+        if(target.dataset.mode === 'night') {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          target.dataset.mode = 'day';
+          this.innerHTML = 'Toggle - Night';
+          var i = 0;
+          while(i < 3) {
+            i++;
+          }
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length) {
+            alist[i].style.color = '#22a1c4';
+            i++;
+          }
         } else {
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
-          document.querySelector('body').dataset.mode = 'night';
-          document.querySelector('#toggleBtn').innerHTML = 'Toggle - Day';
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          target.dataset.mode = 'night';
+          this.innerHTML = 'Toggle - Day';
+          var i = 0;
+          while(i < 3) {
+            i++;
+          }
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            i++;
+          }
         }
       ">Toggle - Night</button>
       <p><a target="blank" href="
         http://html5.clearboth.org/elements.html#embedding-custom-non-visible-data-with-the-data-attributes
         ">custom data attribute</a></p>
+      <p><a target="blank" href="
+        https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
+        ">Array</a></p>
     </section>
   </article>
   <article>
