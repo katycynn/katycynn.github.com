@@ -15,6 +15,7 @@
 
     gtag('config', 'UA-112450183-1');
   </script>
+  <script src="/js/script.js"></script>
 </head>
 <body>
   <header>
@@ -38,68 +39,13 @@
     <h2>Script</h2>
     <section>
       <button type="button" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        document.querySelector('body').dataset.mode = 'night';
-        var i = 0;
-        while(i < 3) {
-          i++;
-        }
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-          alist[i].style.color = 'powderblue';
-          i++;
-        }
+        nightHandler();
       ">Night</button>
       <button type="button" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        document.querySelector('body').dataset.mode = 'day';
-        var i = 0;
-        while(i < 3) {
-          i++;
-        }
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-          alist[i].style.color = '#22a1c4';
-          i++;
-        }
+        dayHandler();
       ">Day</button>
       <button type="button" onclick="
-        var target = document.querySelector('body');
-        if(target.dataset.mode === 'night') {
-          target.style.backgroundColor = 'white';
-          target.style.color = 'black';
-          target.dataset.mode = 'day';
-          this.innerHTML = 'Toggle - Night';
-          var i = 0;
-          while(i < 3) {
-            i++;
-          }
-          var alist = document.querySelectorAll('a');
-          var i = 0;
-          while(i < alist.length) {
-            alist[i].style.color = '#22a1c4';
-            i++;
-          }
-        } else {
-          target.style.backgroundColor = 'black';
-          target.style.color = 'white';
-          target.dataset.mode = 'night';
-          this.innerHTML = 'Toggle - Day';
-          var i = 0;
-          while(i < 3) {
-            i++;
-          }
-          var alist = document.querySelectorAll('a');
-          var i = 0;
-          while(i < alist.length) {
-            alist[i].style.color = 'powderblue';
-            i++;
-          }
-        }
+        nightDayHandler(this);
       ">Toggle - Night</button>
       <p><a target="blank" href="
         http://html5.clearboth.org/elements.html#embedding-custom-non-visible-data-with-the-data-attributes
