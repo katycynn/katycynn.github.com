@@ -41,42 +41,30 @@
     <article>
       <h2>Script</h2>
       <ul class="article-list">
-        <li><a href="/document/javascript.html">Javascript</a></li>
         <li><a href="/document/php.html">PHP</a></li>
       </ul>
     </article>
+  </section>
+  <section>
     <article>
-      <h2>Web</h2>
-      <p class="media_p"><a href="https://opentutorials.org/course/3084/18899">웹사이트 방문자 분석기</a></p>
-      <iframe class="media_iframe" width="560" height="315" src="https://www.youtube.com/embed/K3cYoZ9AFOI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </article>
-    <article>
-      <h2>Semantic</h2>
-      <section>
-        <h4>&lt;section&gt;</h4>
-        <p>콘텐츠 영역임을 구별하여 나타내고, 문맥의 흐름 중에서 주제별로 묶기 위해 사용됩니다.</p>
-      </section>
-      <section>
-        <h4>&lt;article&gt;</h4>
-        <p>독립적인 컴포넌트로 봐야합니다.</p>
-      </section>
+      <h4>Javascript</h4>
+      <button type="button" onclick="
+        nightHandler();
+      ">Night</button>
+      <button type="button" onclick="
+        dayHandler();
+      ">Day</button>
+      <button type="button" onclick="
+        nightDayHandler(this);
+      ">Toggle - Night</button>
+      <p><a target="blank" href="
+        http://html5.clearboth.org/elements.html#embedding-custom-non-visible-data-with-the-data-attributes
+        ">custom data attribute</a></p>
+      <p><a target="blank" href="
+        https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
+        ">Array</a></p>
     </article>
   </section>
   <footer class="foot">2018 katycynn github page</footer>
-
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5a59cca2d7591465c706b666/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-
 </body>
 </html>
